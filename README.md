@@ -26,6 +26,19 @@ Many skills in this repo are open source (Apache 2.0). We've also included the d
 - [./spec](./spec): The Agent Skills specification
 - [./template](./template): Skill template
 
+## Submodules
+This repo includes a git submodule at `skills/cnb-openapi-skills`.
+
+After cloning, run:
+```
+git submodule update --init --recursive
+```
+
+To pull the latest submodule changes:
+```
+git submodule update --remote
+```
+
 # Try in Claude Code, Claude.ai, and the API
 
 ## Claude Code
