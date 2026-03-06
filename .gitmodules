@@ -1,0 +1,3 @@
+[submodule "skills/cnb-openapi-skills"]
+	path = skills/cnb-openapi-skills
+	url = https://cnb.cool/cnb/sdk/cnb-openapi-skills
