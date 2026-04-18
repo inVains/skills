@@ -105,3 +105,25 @@ The markdown content below contains the instructions, examples, and guidelines t
 Skills are a great way to teach Claude how to get better at using specific pieces of software. As we see awesome example skills from partners, we may highlight some of them here:
 
 - **Notion** - [Notion Skills for Claude](https://www.notion.so/notiondevs/Notion-Skills-for-Claude-28da4445d27180c7af1df7d8615723d0)
+
+# Unified Skill Management
+
+This fork also includes a repository-local skill management layer:
+
+- `./skillctl` - CLI for listing, adding, scanning, validating, locking, exporting, and restoring skills
+- `./registry/registry.json` - Source and skill inventory
+- `./registry/locks.json` - Generated lock file with resolved refs and content hashes
+- `./skills/skill-manager` - A skill that instructs agents to operate through `./skillctl`
+
+Examples:
+
+```bash
+./skillctl source list --json
+./skillctl source scan anthropic-local --json
+./skillctl skill list --json
+./skillctl sync --json
+./skillctl doctor --json
+./skillctl lock --json
+./skillctl install playwright-scraper-skill --json
+./skillctl export --skills skill-manager config-safe --json
+```
