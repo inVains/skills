@@ -50,15 +50,6 @@
       "skills": [
         "./skills/claude-api"
       ]
-    },
-    {
-      "name": "management-skills",
-      "description": "Repository-local skill management and migration tooling",
-      "source": "./",
-      "strict": false,
-      "skills": [
-        "./skills/skill-manager"
-      ]
     }
   ]
 }
